@@ -76,3 +76,116 @@ main {
     box-sizing: border-box;
     padding: 25px 0;
 }
+#startQuiz {
+    text-align: center;
+}
+#question {
+    font-size: 1.5em;
+}
+#timer ,
+    .choice_status {
+        text-align: center;
+    }
+#timer {
+    border-bottom: 3px solid black;
+    padding-bottom: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#time_remaining {
+    color: blue;
+}
+
+#options {
+    list-style: none;
+    padding-left: 0;
+}
+
+#options button {
+    margin-left: 0;
+}
+.choice_status {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#correct {
+    color: deepskyblue;
+}
+#wrong {
+    color: firebrick;
+}
+
+#quiz_questions,
+#end {
+    border-bottom: 3px solid black;
+    padding-bottom: 15px;
+}
+
+#scoreText {
+    font-size: 1.3em;
+    color: black;
+}
+#score {
+    font-weight: bold;
+    columns: black;
+}
+
+#enter_score {
+    margin-bottom: 10px;
+}
+
+#enter_score label {
+    display: block;
+}
+#fullName {
+    padding: 2px;
+    font-size: 1em;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.error {
+    border: 1.5px solid red;
+}
+#error_message {
+    color: red;
+    margin-top: 5px;
+}
+table {
+    border-spacing: 0 0.5em;
+}
+tr:nth-child(even) {
+    background-color: seashell;
+}
+
+td, th {
+    padding: 10px;
+}
+th {
+    border-bottom: 1px solid black;
+}
+td {
+    text-align: center;
+}
+th:first-child,
+td:first-child {
+    text-align: right;
+}
+th:last-child,
+td:last-child {
+    text-align: right;
+}
+#highscore_buttons {
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 990px) {
+    main {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    main {
+        width: 40%;
+    }
+}
