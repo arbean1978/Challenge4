@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Hypertrophy Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
       <header>
@@ -40,8 +40,13 @@
                   <button type="submit">Submit</button>
                   <p id="error_message"></p>
               </form>
-              <a href="index.html" class="back_button"><i class="fas fa-check-circle" aria-hidden="correct"></i>Back to the Quiz...</a>
-              
+              <a href="index.html" class="back_button"><i class="fas fa-angle-left" aria-hidden="correct"></i>Back to the Quiz...</a>  
           </section>
+          <div>
+              <p id="corAnswer" class="choice_status hidden"><i class="fas fa-check-circle" aria-hidden="correct"></i>You Got It!</p>
+              <p id="wroAnswer" class="choice_status hidden"><i class="fas fa-times-circle" aria-hidden="wrong"></i>Nope!</p>
+          </div>
       </main>
+
+      <script src="./assets/js/script.js"></script>
   </body>
