@@ -28,3 +28,51 @@ a:focus,
 a:active {
     color: rgb(56, 15, 95);
 }
+button,
+    .back_button {
+        display: inline-block;
+        padding: 5px 15px;
+        margin: 0.5em 0.5em 0 0.5em;
+        border-radius: 5px;
+        border-style: none;
+        background-color: darkblue;
+        color: white;
+        cursor: pointer;
+        font-size: 1em;
+        text-align: center;
+        transition: background-color 0.2 ease-in-out;
+    }
+.back_button:hover,
+.back_button:focus,
+.back_button:active,
+button:hover,
+button:focus,
+button:active {
+    background-color: yellow;
+    color: white;
+}
+
+.back_button {
+    margin-left: 0;
+}
+/*****hidden stuff-**/
+.hidden {
+    display: none;
+}
+
+/***navbar**/
+nav {
+    padding: 15px;
+    border-bottom: 2 px solid black;
+}
+
+/**sections**/
+main {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    height: 70%;
+    box-sizing: border-box;
+    padding: 25px 0;
+}
