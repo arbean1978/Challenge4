@@ -20,28 +20,28 @@ function addHighscoreTableRows (highScores) {
         const userrank=createRank(index + 1);
         const userscore=createScore(scoreItem.score);
         const username=createName(scoreItem.name);
-        const highScore=createhighScore(userrank, userscore,username);
-        highscore_table.appendChild(highScore);
+        const highScoreTableRow = createhighScore(userrank, userscore,username);
+        highscore_table.appendChild(highScoreTableRow);
         
     });
 }
 
-function createuserrank(rank) {
-    const userrank = document.createElement("td");
-    userrank.textContent = '#s{rank}';
-    return userrank;
+function createuserRank(rank) {
+    const userRank = document.createElement("td");
+    userRank.textContent = '#${rank}';
+    return userRank;
 }
 
-function createuserscore(score) {
-    const userscore = document.createElement("td");
-    userscore.textContent = score;
-    return userscore;
+function createuserScore(score) {
+    const userScore = document.createElement("td");
+    userScore.textContent = score;
+    return userScore;
 }
 
-function createusername(name) {
-    const username = document.createElement("td");
-    username.textContent = name;
-    return username;
+function createuserName(name) {
+    const userName = document.createElement("td");
+    userName.textContent = name;
+    return userName;
 }
 
 function createHighScoreTableRow(rank, score, name) {
@@ -54,7 +54,7 @@ function createHighScoreTableRow(rank, score, name) {
 
 function clearHighscores() {
     localStorage.setItem('scoreList', [] );
-    while (highscore_table.children.lenth . 1) {
+    while (highscore_table.children.length > 1) {
         highscore_table.removeChild(highscore_table.lastChild)
     }
 }
