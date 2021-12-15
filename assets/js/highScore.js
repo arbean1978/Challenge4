@@ -8,7 +8,7 @@ generateHighscoresTable()
 function generateHighscoresTable () {
     let highScores = localStorage.getItem("scoreList");
     if (highScores) {
-        addHighscoresTableRows (highScores);
+        addHighscoreTableRows (highScores);
     }
 }
 
